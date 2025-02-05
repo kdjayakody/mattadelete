@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Digital Marketing Co.</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="antialiased text-gray-800">
+  <!-- Navbar -->
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-6">
+        <div class="flex-shrink-0">
+          <a href="#" class="text-2xl font-bold text-blue-600">Digital Marketing Co.</a>
+        </div>
+        <nav class="hidden md:flex space-x-10">
+          <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">Home</a>
+          <a href="#about" class="text-base font-medium text-gray-500 hover:text-gray-900">About</a>
+          <a href="#services" class="text-base font-medium text-gray-500 hover:text-gray-900">Services</a>
+          <a href="#contact" class="text-base font-medium text-gray-500 hover:text-gray-900">Contact</a>
+        </nav>
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100">Home</a>
+        <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100">About</a>
+        <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100">Services</a>
+        <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-600 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div class="lg:flex lg:items-center lg:justify-between">
+        <div class="lg:w-1/2">
+          <h1 class="text-4xl sm:text-5xl font-extrabold mb-4">
+            Elevate Your Business with Digital Marketing
+          </h1>
+          <p class="text-lg mb-8">
+            We create innovative digital marketing strategies to drive growth and maximize ROI. Let's build your brand together.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition duration-300">
+              Get Started
+            </a>
+            <a href="#services" class="border border-white px-6 py-3 rounded-md font-medium hover:bg-blue-500 transition duration-300">
+              Learn More
+            </a>
+          </div>
+        </div>
+        <div class="mt-10 lg:mt-0 lg:w-1/2">
+          <!-- Hero image (using a free Unsplash image) -->
+          <img src="https://source.unsplash.com/collection/190727/800x600" alt="Digital Marketing" class="rounded-lg shadow-lg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-extrabold text-gray-900">About Us</h2>
+        <p class="mt-4 text-lg text-gray-600">
+          We are a team of digital marketing experts dedicated to transforming your online presence.
+        </p>
+      </div>
+      <div class="lg:flex lg:items-center lg:justify-between">
+        <div class="lg:w-1/2">
+          <p class="text-gray-700 mb-6">
+            Our mission is to empower businesses by delivering innovative digital marketing solutions tailored to their unique needs. We specialize in SEO, social media marketing, content creation, and more.
+          </p>
+          <p class="text-gray-700">
+            Let us help you create a powerful digital footprint and drive meaningful engagement with your target audience.
+          </p>
+        </div>
+        <div class="lg:w-1/2 mt-8 lg:mt-0">
+          <img src="https://source.unsplash.com/collection/190727/800x600" alt="About Us" class="rounded-lg shadow-lg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-extrabold text-gray-900">Our Services</h2>
+        <p class="mt-4 text-lg text-gray-600">
+          Discover the range of services we offer to boost your online success.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Service Card 1 -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+          <div class="mb-4">
+            <svg class="h-12 w-12 text-blue-600 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 11V7a4 4 0 10-8 0v4m12 0v4a4 4 0 11-8 0v-4m8-4a4 4 0 11-8 0" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2 text-center">SEO Optimization</h3>
+          <p class="text-gray-600 text-center">
+            Improve your search rankings and drive organic traffic with our expert SEO services.
+          </p>
+        </div>
+        <!-- Service Card 2 -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+          <div class="mb-4">
+            <svg class="h-12 w-12 text-blue-600 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6 6 0 10-12 0v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2 text-center">Social Media Marketing</h3>
+          <p class="text-gray-600 text-center">
+            Engage your audience and expand your reach through targeted social media campaigns.
+          </p>
+        </div>
+        <!-- Service Card 3 -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
+          <div class="mb-4">
+            <svg class="h-12 w-12 text-blue-600 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0l-4-4m4 4l-4 4" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2 text-center">Content Marketing</h3>
+          <p class="text-gray-600 text-center">
+            Create compelling content that resonates with your audience and drives conversions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-blue-600 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-extrabold">Get In Touch</h2>
+        <p class="mt-4 text-lg">
+          Ready to grow your business? Contact us today and let's start your digital marketing journey.
+        </p>
+      </div>
+      <div class="max-w-md mx-auto">
+        <form class="space-y-6">
+          <div>
+            <label for="name" class="block text-sm font-medium">Name</label>
+            <input type="text" id="name" class="mt-1 block w-full px-3 py-2 rounded-md text-gray-900" placeholder="Your Name" />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium">Email</label>
+            <input type="email" id="email" class="mt-1 block w-full px-3 py-2 rounded-md text-gray-900" placeholder="you@example.com" />
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium">Message</label>
+            <textarea id="message" rows="4" class="mt-1 block w-full px-3 py-2 rounded-md text-gray-900" placeholder="Your Message"></textarea>
+          </div>
+          <div>
+            <button type="submit" class="w-full bg-white text-blue-600 px-4 py-2 rounded-md font-semibold hover:bg-gray-100 transition duration-300">
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-400 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p>&copy; 2025 Digital Marketing Co. All rights reserved.</p>
+      <div class="mt-4 space-x-4">
+        <a href="#" class="hover:text-white">Privacy Policy</a>
+        <a href="#" class="hover:text-white">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Mobile Menu Toggle -->
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
